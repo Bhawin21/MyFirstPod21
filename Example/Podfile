@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MyFirstPod21_Example' do
+  pod 'MyFirstPod21', :path => '../'
+
+  target 'MyFirstPod21_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
